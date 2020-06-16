@@ -1,0 +1,49 @@
+@import-normalize;
+
+body {
+  background-color: white;
+}
+#root {
+  display: flex;
+  justify-content: center;
+}
+.place {
+  &__container {
+    // margin: 0 auto;
+  }
+  &__image {
+    // margin: 0 auto;
+  }
+  &__details {
+    width: 50em;
+  }
+  &__link {
+    margin-top: 2rem;
+    font-size: larger;
+    &:visited,
+    &:link {
+      text-decoration: none;
+      color: #0f3b1d;
+      display: inline-block;
+      text-decoration: none;
+      border-bottom: 1px solid #55c57a;
+      padding: 3px;
+      transition: all 0.3s;
+    }
+    &:hover {
+      background-color: #55c57a;
+      color: #fff;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+      transform: translateY(-2px);
+    }
+  }
+  &__name {
+    float: right;
+  }
+
+  &__location,
+  &__name {
+    font-size: larger;
+    color: #0f3b1d;
+  }
+}
