@@ -10,7 +10,7 @@ function App() {
     const fetchData = async () => {
       // await fetch('https://pokeapi.co/api/v2/pokemon/ditto', {
       await fetch('http://node.uttarakhandtraveller.com/places/1', {
-        // mode: 'cors',
+        mode: 'cors',
         // crossDomain: true,
         // headers: {},
       })
